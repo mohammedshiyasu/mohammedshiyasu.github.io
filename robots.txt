@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohammedshiyasu.github.io/sitemap.xml

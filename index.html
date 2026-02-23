@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; script-src 'self';">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <title>Mohammed Shiyas Ullil | Tech Architect & Senior .NET Full Stack Developer</title>
+    <meta name="description"
+        content="Portfolio of Mohammed Shiyas Ullil, a Tech Architect and .NET Full Stack Developer specializing in cloud-native solutions, microservices, and AI integration.">
+    <meta name="keywords"
+        content="Mohammed Shiyas Ullil, Tech Architect, Senior .NET Developer, Full Stack Developer, C#, ASP.NET Core, Microservices, Cloud Architecture, AWS, Azure, Angular">
+    <meta name="author" content="Mohammed Shiyas Ullil">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (used by LinkedIn, Slack, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohammedshiyasu.github.io/">
+    <meta property="og:title" content="Mohammed Shiyas Ullil | Tech Architect & Senior .NET Developer">
+    <meta property="og:description"
+        content="Portfolio of Mohammed Shiyas Ullil, a Tech Architect specializing in writing elegant code and designing robust, scalable, modern applications.">
+    <meta property="og:image" content="https://mohammedshiyasu.github.io/assets/headshot.png">
+
+    <link rel="canonical" href="https://mohammedshiyasu.github.io/">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <script src="script.js" defer></script>
+
+    <!-- JSON-LD Structured Data Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mohammed Shiyas Ullil",
+      "jobTitle": "Tech Architect & Senior .NET Full Stack Developer",
+      "url": "https://mohammedshiyasu.github.io/",
+      "image": "https://mohammedshiyasu.github.io/assets/headshot.png",
+      "sameAs": [
+        "https://www.linkedin.com/in/mohammedshiyasu/",
+        "https://github.com/mohammedshiyasu"
+      ],
+      "knowsAbout": [
+        "C#", ".NET Core", "Cloud Infrastructure", "Microservices Architecture", 
+        "System Design", "AWS", "Azure", "Angular", "Cybersecurity"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Tech Industry"
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">MOHAMMED SHIYAS ULLIL.</div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="nav-links">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text reveal">
+                <h1>Mohammed Shiyas Ullil</h1>
+                <h2 style="font-size: 1.15rem;">Tech Architect | Senior .NET Full-Stack Developer</h2>
+                <p>“Passionate about writing elegant code, finding solutions to complex problems, and designing
+                    scalable, modern architectures.”</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn"
+                        style="background: transparent; border: 1px solid var(--primary); color: var(--primary);">Contact
+                        Me</a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <img src="assets/headshot.png"
+                    alt="Mohammed Shiyas Ullil - Senior .NET Full Stack Developer & Tech Architect">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>With 7+ years of experience, I have evolved from a hands-on developer to a Tech Architect,
+                        specializing in transforming complex business requirements into robust, scalable systems.</p>
+                    <p>My expertise lies in modernization, cloud-native architecture, and AI integration. I am currently
+                        deepening my knowledge in Cybersecurity to ensure that the solutions I design are resilient by
+                        default.</p>
+                    <p><strong>Open to international relocation:</strong> Germany, USA, and global tech hubs.</p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-card">
+                        <h3>7+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card" style="margin-top: 20px;">
+                        <h3>10+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title reveal">Tech Stack & Tools</h2>
+            <div class="skills-container reveal">
+                <!-- Category 1 -->
+                <div class="skills-category">
+                    <h3>Cloud & Infrastructure</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">AWS (Serverless)</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">PCF</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">IIS</span>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skills-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Azure DevOps / TFS</span>
+                        <span class="skill-tag">CI/CD (Jenkins, Octopus, Harness)</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Splunk</span>
+                        <span class="skill-tag">Atlassian Suite</span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skills-category">
+                    <h3>Backend & Architecture</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">.NET (Core, 8, Framework)</span>
+                        <span class="skill-tag">ASP.NET MVC & Web API</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">OOP & SOLID</span>
+                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">System Design</span>
+                        <span class="skill-tag">WCF</span>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="skills-category">
+                    <h3>Frontend Web</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">TypeScript / JavaScript</span>
+                        <span class="skill-tag">HTML5 / CSS / SCSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">StencilJS</span>
+                        <span class="skill-tag">SPA Architecture</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="skills-category">
+                    <h3>Databases & Data</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">MS SQL Server</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">LINQ & Dapper</span>
+                        <span class="skill-tag">SSRS</span>
+                        <span class="skill-tag">Data Warehousing</span>
+                    </div>
+                </div>
+
+                <!-- Category 6 -->
+                <div class="skills-category">
+                    <h3>Security & Auth</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">AppSec (Veracode, Fortify)</span>
+                        <span class="skill-tag">FedRAMP</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">Identity Mgmt</span>
+                        <span class="skill-tag">Secure Coding</span>
+                    </div>
+                </div>
+
+                <!-- Category 7 -->
+                <div class="skills-category">
+                    <h3>AI & Testing</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">AI Integration</span>
+                        <span class="skill-tag">GenAI Prompting</span>
+                        <span class="skill-tag">Antigravity / Copilot</span>
+                        <span class="skill-tag">Gemini / ChatGPT</span>
+                        <span class="skill-tag">TDD / BDD</span>
+                        <span class="skill-tag">SpecFlow</span>
+                        <span class="skill-tag">JMeter</span>
+                    </div>
+                </div>
+
+                <!-- Category 8 -->
+                <div class="skills-category">
+                    <h3>Leadership & Methods</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Agile / Scrum</span>
+                        <span class="skill-tag">Tech Leadership</span>
+                        <span class="skill-tag">Client Management</span>
+                        <span class="skill-tag">Legacy Modernization</span>
+                        <span class="skill-tag">Troubleshooting</span>
+                        <span class="skill-tag">Tech Mentorship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title reveal">Experience</h2>
+            <div class="timeline reveal">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Tech Architect</h3>
+                        <p>Careernet | Sep 2025 - Jan 2026</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Senior Technical Member</h3>
+                        <p>Broadridge | Sep 2023 - Sep 2025</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <p>Mphasis | Aug 2021 - Sep 2023</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <p>TCS | May 2019 - Aug 2021</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <p>Softend Technoserve | Sep 2017 - Apr 2018</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <p>I Fly Techsoft | Jan 2017 - Jul 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="background: var(--bg-surface);">
+        <div class="container">
+            <h2 class="section-title reveal">Case Studies</h2>
+            <div class="projects-grid">
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Legacy Modernization</h3>
+                        <p>Led the modernization of a monolithic fintech application to a microservices architecture,
+                            improving scalability by 40%.</p>
+                        <ul
+                            style="margin-top: 1rem; list-style: disc; padding-left: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                            <li>Architecture Diagram Implementation</li>
+                            <li>Team Mentoring (10+ Juniors)</li>
+                            <li>Stakeholder Collaboration</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/diag1.png" alt="Modernization Architecture Diagram">
+                    </div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Cloud-Native ERP Solution</h3>
+                        <p>Designed and deployed a cloud-native ERP solution for a global banking client, reducing
+                            infrastructure costs by 25%.</p>
+                        <ul
+                            style="margin-top: 1rem; list-style: disc; padding-left: 1rem; color: var(--text-muted); font-size: 0.9rem;">
+                            <li>AI-driven Data Insights</li>
+                            <li>Secure Integration Patterns</li>
+                            <li>Global Scale Deployment</li>
+                        </ul>
+                    </div>
+                    <div class="project-image">
+                        <img src="assets/diag2.png" alt="Cloud ERP Architecture Diagram">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container" style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p style="color: var(--text-muted); font-size: 1.125rem; margin-bottom: 2.5rem;">
+                    I am currently open to new opportunities and exciting architecture challenges. Whether you have a
+                    question or just want to connect, feel free to drop an email at <strong
+                        style="color: var(--text-color);" id="email-display">loading...</strong>!
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#" id="mail-app-btn" class="btn" style="display: inline-block;">Open Mail
+                        App</a>
+                    <a href="#" id="gmail-btn" target="_blank" rel="noopener noreferrer" class="btn"
+                        style="background: transparent; border: 1px solid var(--primary); color: var(--primary); display: inline-block;">Open
+                        in Gmail</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        style="padding: 4rem 0; background: var(--bg); border-top: 1px solid var(--border); color: var(--text-muted); text-align: center;">
+        <div class="container">
+            <p>&copy; 2026 Mohammed Shiyas Ullil. Built with Clarity and Impact.</p>
+            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 2rem;">
+                <a href="https://www.linkedin.com/in/mohammedshiyasu/" target="_blank" rel="noopener noreferrer"
+                    style="font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">LinkedIn</a>
+                <a href="https://github.com/mohammedshiyasu" target="_blank" rel="noopener noreferrer"
+                    style="font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">GitHub</a>
+                <!-- <a href="#" style="font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase;">Blog</a> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
