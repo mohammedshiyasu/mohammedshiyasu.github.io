@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio – mohammedshiyasu.github.io
+# 🌐 Personal Portfolio – mohammedshiyasu.is-a.dev
 
 This repository hosts the source code for **Mohammed Shiyas Ullil’s personal portfolio website**, designed to showcase professional expertise, technical projects, and career achievements. The site is lightweight, responsive, and recruiter-friendly, making it easy to explore Mohammed’s background in **cloud-native architecture, AI integration, modernization, and cybersecurity exploration**.
 
